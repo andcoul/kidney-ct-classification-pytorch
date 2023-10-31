@@ -1,0 +1,3 @@
+BATCH_SIZE : 8
+N_EPOCHS : 1
+LR : 0.001

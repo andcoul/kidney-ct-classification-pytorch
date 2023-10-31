@@ -1,0 +1,21 @@
+torch
+torchvision
+opencv-python
+numpy
+pandas
+scikit-learn
+matplotlib
+dvc
+mlflow==2.2.2
+notebook
+pyYAML
+python-box==6.0.2
+tqdm
+ensure==1.0.2
+Flask
+Flask-Cors
+Django
+gdown
+-e .
+
+

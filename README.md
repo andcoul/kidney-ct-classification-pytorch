@@ -1,1 +1,2 @@
-# kidney-ct-classification-pytorch
+# Kidney-ct-classification
+Kidney Ct Scan Image Classification using Pytorch
