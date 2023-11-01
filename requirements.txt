@@ -6,7 +6,7 @@ pandas
 scikit-learn
 matplotlib
 dvc
-mlflow==2.2.2
+mlflow
 notebook
 pyYAML
 python-box==6.0.2

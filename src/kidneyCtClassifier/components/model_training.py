@@ -18,7 +18,7 @@ from kidneyCtClassifier.entity.config_entity import TrainingConfig, PrepareBaseM
 torch.manual_seed(1)
 
 
-class DataTraining:
+class ModelTraining:
     def __init__(self, config: TrainingConfig):
         self.config = config
 
@@ -28,7 +28,7 @@ class DataTraining:
         # Specify that the model should be loaded on the 'cpu' device, instead of the 'cuda' device.
         # ckpt = torch.load(self.config.updated_base_model_path, map_location=torch.device('cpu'))
         ckpt = torch.load(self.config.updated_base_model_path)
-        model = models.vgg16(weights='VGG16_Weights.DEFAULT')
+        model = models.resnet18(weights='ResNet18_Weights.DEFAULT')
         model.load_state_dict(ckpt)
 
         criterion = nn.CrossEntropyLoss()
@@ -41,7 +41,7 @@ class DataTraining:
         # Statically set, got from data preparation component print
         data_size = 0
 
-        for idx_epoch in range(self.config.params_epochs):
+        for idx_epoch in tqdm(range(self.config.params_epochs)):
 
             for phase in ['train', 'val']:
                 if phase == 'train':
@@ -54,7 +54,7 @@ class DataTraining:
                 running_loss = 0.0
                 running_corrects = 0
 
-                for inputs, labels in tqdm(train_loader[phase]):
+                for inputs, labels in train_loader[phase]:
                     inputs = inputs.to(device)
                     labels = labels.to(device)
                     optimizer.zero_grad()
@@ -73,9 +73,9 @@ class DataTraining:
 
                 epoch_loss = running_loss / data_size
                 epoch_acc = running_corrects.double() / data_size
-                print(f'{phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
+                # print(f'\n {phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
 
-        self.save_model(self.config.trained_model_path, model)
+        self.save_model(self.config.trained_model_path, model.state_dict())
         print("Training complete!")
 
     def main(self):

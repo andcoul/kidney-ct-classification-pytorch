@@ -1,6 +1,7 @@
 import os
 from kidneyCtClassifier.constants import *
-from kidneyCtClassifier.entity.config_entity import DataIngestionConfig, TrainingConfig, PrepareBaseModelConfig
+from kidneyCtClassifier.entity.config_entity import DataIngestionConfig, TrainingConfig, PrepareBaseModelConfig, \
+    EvaluationConfig
 from kidneyCtClassifier.utils.common import read_yaml, create_directories
 
 
@@ -22,7 +23,7 @@ class ConfigurationManager:
         data_ingestion_config = DataIngestionConfig(
             root_dir=Path(config.root_dir),
             source_URL=config.source_URL,
-            local_data_file=Path(config.local_data_file),
+            local_data_file=config.local_data_file,
             unzip_dir=Path(config.unzip_dir)
         )
 
@@ -57,3 +58,16 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+
+    def get_evaluation_config(self) -> EvaluationConfig:
+        data_eval_config = EvaluationConfig(
+            path_of_model='artifacts/training/model.pth',
+            training_data='artifacts/data_ingestion/kidney-ct-scan-image',
+            mlflow_uri='https://dagshub.com/andcoul/kidney-ct-classification-pytorch.mlflow',
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+
+        )
+
+        return data_eval_config

@@ -18,4 +18,4 @@ logging.basicConfig(
     ]
 )
 
-logger = logging.getLogger("EcanVSRLogger")
+logger = logging.getLogger("KidneyCtClassifierLogger")

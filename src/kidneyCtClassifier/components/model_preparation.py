@@ -13,7 +13,7 @@ class ModelPreparation:
         self.config = config
 
     def get_base_model(self):
-        model = models.vgg16(weights='VGG16_Weights.DEFAULT')
+        model = models.resnet18(weights='ResNet18_Weights.DEFAULT')
         os.makedirs(self.config.root_dir, exist_ok=True)
         self.save_model(self.config.base_model_path, model.state_dict())
 
