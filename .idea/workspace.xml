@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bb5c3a-2ece-48cb-9ce1-7918a518ca70" name="Changes" comment="app and prediction added">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="e0bb5c3a-2ece-48cb-9ce1-7918a518ca70" name="Changes" comment="cicd added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +212,7 @@
       <workItem from="1698692010163" duration="22833000" />
       <workItem from="1698719962499" duration="26858000" />
       <workItem from="1698827981470" duration="1981000" />
-      <workItem from="1698851511510" duration="22706000" />
+      <workItem from="1698851511510" duration="22977000" />
     </task>
     <task id="LOCAL-00001" summary="data and training pipeline added">
       <option name="closed" value="true" />
@@ -283,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698885410313</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cicd added">
+      <option name="closed" value="true" />
+      <created>1698889046010</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698889046011</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +310,8 @@
     <MESSAGE value="dvc added" />
     <MESSAGE value="dvc added and readme updated" />
     <MESSAGE value="app and prediction added" />
-    <option name="LAST_COMMIT_MESSAGE" value="app and prediction added" />
+    <MESSAGE value="cicd added" />
+    <option name="LAST_COMMIT_MESSAGE" value="cicd added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kidney_ct_scan_classification$stage_01_data_ingestion.coverage" NAME="stage_01_data_ingestion Coverage Results" MODIFIED="1698671205668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/kidneyCtClassifier/pipeline" />
