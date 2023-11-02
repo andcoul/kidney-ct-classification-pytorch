@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bb5c3a-2ece-48cb-9ce1-7918a518ca70" name="Changes" comment="dvc added">
+    <list default="true" id="e0bb5c3a-2ece-48cb-9ce1-7918a518ca70" name="Changes" comment="dvc added and readme updated">
+      <change afterPath="$PROJECT_DIR$/inputImage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/model.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kidneyCtClassifier/pipeline/preediction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dvc.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dvc.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/params.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scores.json" beforeDir="false" afterPath="$PROJECT_DIR$/scores.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.py" beforeDir="false" afterPath="$PROJECT_DIR$/template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/andy/Developer/kidney-ct-classification-pytorch",
+    "last_opened_file_path": "/Users/andy/Developer/kidney-ct-classification-pytorch/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,7 +85,36 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model" />
+      <recent name="$PROJECT_DIR$/template" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="kidney-ct-scan-classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_preparation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="kidney-ct-scan-classification" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,28 +181,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stage_02_model_preparation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="kidney-ct-scan-classification" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/kidneyCtClassifier/pipeline" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/kidneyCtClassifier/pipeline/stage_02_model_preparation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="stage_03_model_training" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="kidney-ct-scan-classification" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.stage_03_model_training" />
         <item itemvalue="Python.model_training" />
         <item itemvalue="Python.data_preparation" />
-        <item itemvalue="Python.stage_02_model_preparation" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +225,7 @@
       <workItem from="1698692010163" duration="22833000" />
       <workItem from="1698719962499" duration="26858000" />
       <workItem from="1698827981470" duration="1981000" />
-      <workItem from="1698851511510" duration="5910000" />
+      <workItem from="1698851511510" duration="21227000" />
     </task>
     <task id="LOCAL-00001" summary="data and training pipeline added">
       <option name="closed" value="true" />
@@ -258,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698857080630</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="dvc added and readme updated">
+      <option name="closed" value="true" />
+      <created>1698858248552</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698858248552</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +305,8 @@
     <MESSAGE value="training implementation completed" />
     <MESSAGE value="Model training implementation completed" />
     <MESSAGE value="dvc added" />
-    <option name="LAST_COMMIT_MESSAGE" value="dvc added" />
+    <MESSAGE value="dvc added and readme updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="dvc added and readme updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kidney_ct_scan_classification$stage_01_data_ingestion.coverage" NAME="stage_01_data_ingestion Coverage Results" MODIFIED="1698671205668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/kidneyCtClassifier/pipeline" />
@@ -290,6 +316,7 @@
     <SUITE FILE_PATH="coverage/kidney_ct_scan_classification$stage_03_data_training.coverage" NAME="stage_03_data_training Coverage Results" MODIFIED="1698689358892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/kidneyCtClassifier/pipeline" />
     <SUITE FILE_PATH="coverage/kidney_ct_scan_classification$main.coverage" NAME="main Coverage Results" MODIFIED="1698827540965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kidney_ct_classification_pytorch$main.coverage" NAME="main Coverage Results" MODIFIED="1698852166444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kidney_ct_classification_pytorch$app.coverage" NAME="app Coverage Results" MODIFIED="1698884485166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kidney_ct_scan_classification$stage_02_model_preparation.coverage" NAME="stage_02_model_preparation Coverage Results" MODIFIED="1698677235043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/kidneyCtClassifier/pipeline" />
     <SUITE FILE_PATH="coverage/kidney_ct_scan_classification$template.coverage" NAME="template Coverage Results" MODIFIED="1698666755048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

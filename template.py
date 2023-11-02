@@ -22,9 +22,10 @@ project_files = [
     "params.yaml",
     "dvc.yaml",
     "requirements.txt",
-    "template/index.py",
+    "template/index.html",
     "setup.py",
     "main.py",
+    "app.py",
     "research/trials.ipynb",
 ]
 
