@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bb5c3a-2ece-48cb-9ce1-7918a518ca70" name="Changes" comment="Last commit on 03/11">
+    <list default="true" id="e0bb5c3a-2ece-48cb-9ce1-7918a518ca70" name="Changes" comment="AWS Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +214,7 @@
       <workItem from="1698692010163" duration="22833000" />
       <workItem from="1698719962499" duration="26858000" />
       <workItem from="1698827981470" duration="1981000" />
-      <workItem from="1698851511510" duration="27545000" />
+      <workItem from="1698851511510" duration="28598000" />
     </task>
     <task id="LOCAL-00001" summary="data and training pipeline added">
       <option name="closed" value="true" />
@@ -305,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699014991635</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="AWS Done">
+      <option name="closed" value="true" />
+      <created>1699035715970</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699035715970</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +338,8 @@
     <MESSAGE value="app and prediction added" />
     <MESSAGE value="cicd added" />
     <MESSAGE value="Last commit on 03/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last commit on 03/11" />
+    <MESSAGE value="AWS Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="AWS Done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kidney_ct_scan_classification$stage_01_data_ingestion.coverage" NAME="stage_01_data_ingestion Coverage Results" MODIFIED="1698671205668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/kidneyCtClassifier/pipeline" />
