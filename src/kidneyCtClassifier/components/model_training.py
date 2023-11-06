@@ -72,8 +72,7 @@ class ModelTraining:
                     running_corrects += torch.sum(preds == labels.data)
 
                 epoch_loss = running_loss / data_size
-                epoch_acc = running_corrects.double() / data_size
-                # print(f'\n {phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
+                epoch_acc = running_corrects.double() / data_siz
 
         self.save_model(self.config.trained_model_path, model.state_dict())
         print("Training complete!")
